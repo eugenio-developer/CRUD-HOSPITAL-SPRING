@@ -1,0 +1,34 @@
+<div th:insert="header :: topo"></div>
+ <div
+        class="container p-5 rounded  border-4 border border-success position-absolute top-50 start-50 translate-middle">
+        <form action="#" th:action="@{/medicos/salvar}" th:object="${medico}" method="post">
+            <input type="hidden" th:field="*{id}" name="" id="">
+
+            <div class="row">
+                <label for="nome">Nome:</label>
+                <input class="form-control" type="text" name="nome" id="nome" th:field="*{nome}" placeholder="Digite o nome do Medico">
+            </div>
+            <div class="row">
+
+                <div class="col">
+                    <label for="cmr">CMR:</label>
+                    <input class="form-control"  type="number" name="cmr" id="cmr" th:field="*{cmr}" placeholder="Digite o CMR do Medico">
+                </div>
+                <div class="col">
+                    <label for="especialidade">Especialidade:</label>
+                    <select class="form-select" name="especialidade" id="especialidade" th:field="*{especialidade}">
+                        <option value="" th:each="especialidade : ${especialidades}" th:value="${especialidade.id}"
+                            th:text="${especialidade.nome}"></option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="m-2">
+                
+                <button class="btn btn-outline-success rounded-2  btn-lg position-relative top-0 start-50 translate-middle-x">
+                    <span>Salvar</span>
+                </button>
+            </div>
+        </form>
+    </div>
+<div th:insert="footer :: rodape"></div> 

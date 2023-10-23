@@ -1,0 +1,18 @@
+ <div th:insert="header :: topo"></div>
+        <div class="container p-5 rounded  border-4 border border-success position-absolute top-50 start-50 translate-middle">
+            <form action="#" th:action="@{/especialidades/salvar}" th:object="${especialidade}" method="post">
+                <input type="hidden" th:field="*{id}" name="" id="">
+            
+                <div class="col">
+                  <label for="nome">Nome:</label>
+                  <input  class="form-control" type="text" name="nome" id="nome" th:field="*{nome}" placeholder="Digite o nome da especialidade">
+                </div>
+                <div class="m-2">
+                
+                    <button class="btn btn-outline-success rounded-2  btn-lg position-relative top-0 start-50 translate-middle-x">
+                        <span>Salvar</span>
+                    </button>
+                </div>
+              </form>
+        </div>
+  <div th:insert="footer :: rodape"></div>

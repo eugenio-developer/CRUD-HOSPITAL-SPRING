@@ -1,0 +1,43 @@
+<div th:insert="header :: topo"></div>
+   <div class="container p-5 rounded  border-4 border border-success position-absolute top-50 start-50 translate-middle">
+            <form action="#" th:action="@{/consultas/salvar}" th:object="${consulta}" method="post">
+                <input type="hidden" th:field="*{id}" name="" id="">
+
+                <div class="row">
+                    <div  class="col">
+                        <label for="medico">Médico:</label>
+                        <select  class="form-select" name="medico" id="medico" th:field="*{medico}">
+                            <option value="" th:each="medico : ${medicos}" th:value="${medico.id}" th:text="${medico.nome}">
+                            </option>
+                        </select>
+                    </div>
+                    <div  class="col">
+                        <label for="paciente">Paciente:</label>
+                        <select  class="form-select" name="paciente" id="paciente" th:field="*{paciente}">
+                            <option value="" th:each="paciente : ${pacientes}" th:value="${paciente.id}"
+                                th:text="${paciente.nome}">
+                            </option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <label for="convenio">Convenio:</label>
+                        <input class="form-control" type="text" name="convenio" id="convenio" th:field="*{convenio}"
+                        placeholder="Digite o nome do convenio">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="data">Data:</label>
+                        <input class="form-control" type="date" name="data" id="data" th:field="*{data}" placeholder="Data da consulta">
+                    </div>
+                </div>
+
+                <div class="m-2">
+                
+                    <button class="btn btn-outline-success rounded-2  btn-lg position-relative top-0 start-50 translate-middle-x">
+                        <span>Salvar</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+<div th:insert="footer :: rodape"></div> 

@@ -11,3 +11,8 @@ Java: Linguagem de programação robusta e orientada a objetos, proporcionando a
 Spring Boot: Framework Java que simplifica a criação de aplicações web, reduzindo a quantidade de código boilerplate e oferecendo uma estrutura sólida para o projeto.  
 
 Thymeleaf: Motor de templates para Java que permite criar interfaces de usuário dinâmicas e elegantes, facilitando a separação da lógica de apresentação da lógica de negócio.  
+
+![image](https://github.com/user-attachments/assets/634ceb24-14c3-4f11-9c20-4d3499415a39)
+
+![image](https://github.com/user-attachments/assets/e4e054ce-23ec-46ce-b8da-c0e28e54dbe5)
+

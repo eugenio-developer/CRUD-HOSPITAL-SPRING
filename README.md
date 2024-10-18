@@ -1,4 +1,4 @@
-# CRUD-JAVA-SPRING
+# HOSPITAL-SPRING
 
 Sistema de Gerenciamento Hospitalar
 

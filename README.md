@@ -1,7 +1,11 @@
 # CRUD-JAVA-SPRING
 
-O projeto foi desenvolvido na aula de Back-End, orientada pelo professor Paulo Milhorato.
+Sistema de Gerenciamento Hospitalar
 
-A aplicação consistem em um sistema que gerencia medicos, especialidades, consultas e pacientes de um hospital. Para o seu desenvolvimento foram utilizadas as
-tecnologias java juntamente ao seu Framework Spring Boot e suas respectivas bibliotecas. A principal biblioteca utilizada foi o Thymeleaf, a construção da camada de view em uma pagina HTML, trazendo praticidade na hora da utilização.
-Observe as imagens:
+Desenvolvido na disciplina de Back-end, sob a orientação do professor Paulo Milhorato, este projeto visa otimizar a gestão de informações em um ambiente hospitalar. A aplicação, construída em Java com o framework Spring Boot, oferece um conjunto de funcionalidades para gerenciar médicos, especialidades, consultas e pacientes.
+
+Tecnologias Utilizadas:  
+
+Java: Linguagem de programação robusta e orientada a objetos, proporcionando a base para o desenvolvimento da aplicação.  
+Spring Boot: Framework Java que simplifica a criação de aplicações web, reduzindo a quantidade de código boilerplate e oferecendo uma estrutura sólida para o projeto.  
+Thymeleaf: Motor de templates para Java que permite criar interfaces de usuário dinâmicas e elegantes, facilitando a separação da lógica de apresentação da lógica de negócio.  
